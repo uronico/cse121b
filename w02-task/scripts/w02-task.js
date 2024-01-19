@@ -26,7 +26,7 @@ const imageElement = document.querySelector('img');
 nameElement.innerHTML = `<strong>${fullName}</strong>`;
 yearElement.textContent = currentYear;
 imageElement.setAttribute('src', profilePicture);
-imageElement.setAttribute('alt', `This is ${fullname}`.);
+imageElement.setAttribute('alt', `This is ${fullName}.`);
 
 
 
@@ -34,7 +34,19 @@ imageElement.setAttribute('alt', `This is ${fullname}`.);
 
 /* Step 5 - Array */
 
+let favFoods = ['Rice', 'Chicken', 'Spaghetti', 'Avocado', 'Adobo'];
+foodElement.innerHTML = favFoods;
 
+let newfoods = 'Chocolate';
+favFoods.push(newfoods);
+foodElement.innerHTML += `<br> ${favFoods}`;
+
+
+favFoods.shift();
+foodElement.innerHTML += `<br> ${favFoods}`;
+
+favFoods.pop();
+foodElement.innerHTML += `<br> ${favFoods}`;
 
 
 
